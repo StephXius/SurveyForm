@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <link href= "form.css" rel=stylesheet type="text/css">
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveryForm2021</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header"> 
+              <h1 id="title" class="text-center"> Favorite Movie Survey</h1>
+              <p id="description" class="description text-center"> Thank you for taking this survey </p>
+            </header>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text"
+                       name="name"
+                       id="name"
+                       class="form-control"
+                       placeholder="Enter Your Name"
+                       required
+                       />
+              </div>
+              <div class='form-group'>
+                <label id="email-label"
+                       for="email">Email</label>
+                <input 
+                       type="email"
+                       name="name"
+                       id="email"
+                       class="form-control"
+                       placeholder="Enter Your Email"
+                       required
+                       />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">
+                  Age <span class="clue">(optional)</span>
+                </label>
+                <input
+                       type="number"
+                       name="age"
+                       id="number"
+                       min="10"
+                       max="99"
+                       class="form-control"
+                       placeholder="Age"
+                       />
+              </div>
+              <div class="form-group">
+                <p> Which movie genre is your favorite?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value> Select your favorite genre</option>
+                  <option value="action">Action</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="drama">Drama</option>
+                  <option value="fantasy">Fantasy</option>
+                  <option value="horror">Horror</option>
+                  <option value="mystery">Mystery</option>
+                  <option value="romance">Romance</option>
+                  <option value="thriller">Thriller</option>
+                  <option value="western">Western</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <p> Would you recommend one of the movie genres in the previous question to a family or friend?</p>
+                    <label>
+                      <input
+                           name="user-recommend"
+                           value="yes"
+                           type="radio"
+                           class="input-radio"
+                           checked
+                             />Yes</label>
+                    <label>
+                      <input
+                             name="user-recommend"
+                             value="no"
+                             type="radio"
+                             class="input-radio"
+                             checked
+                             />No</label>
+                    <label>
+                      <input
+                             name="user-recommend"
+                             value="maybe"
+                             type="radio"
+                             class="input-radio"
+                             checked
+                             />Maybe</label>
+                <div class="form-group">
+                  <p>What is your favorite movie for the year 2021?</p>
+                  <select id="most-like" name="mostLike"
+                          class="form-control" required>
+                    <option disabled selected value> Select an option</option>
+                    <option value="spider-man-no-way-home">Spider-Man: No Way Home</option>
+                    <option value="notimetodie"> No Time To Die</option>
+                    <option value="shang-chiandthelegendofthetenrings">Shang-Chi And The Legend Of The Ten Rings</option>
+                    <option value="thefather">The Father</option>
+                    <option value="encanto">Encanto</option>
+                    <option value="dune">Dune</option>
+                    <option value="aquietplacepartii">A Quiet Place II </option>
+                    <option value="thesuicidesquad">The Suicide Squad</option>
+                    <option value="palmsprings"> Palm Springs</option>
+                    <option value="freeguy"> Free Guy</option>
+                  </select>
+                </div>
+            <div class="form-group">
+              <p>Where do you watch your movies?
+                <span class="clue">(Check all that apply)
+                </span>
+              </p>
+              
+              <label>
+                <input
+                    name="prefer"
+                    value="netflix"
+                    type="checkbox"
+                    class="input-checkbox"
+                       /> Netflix</label>
+              <label>
+                <input
+                      name="prefer"
+                      value="hulu"
+                      type="checkbox"
+                      class="input-checkbox"
+                       />Hulu</label>
+              <label>
+                <input
+                       name="prefer"
+                       value="hbomax"
+                       type="checkbox"
+                       class="input-checkbox"
+                       />HBOMax</label>
+              <label>
+                  <input 
+                         name="prefer"
+                         value="peacocktv"
+                         type="checkbox"
+                         class="input-checkbox"
+                         />Peacocktv</label>
+              <label>
+                  <input 
+                         name="prefer"
+                         value="vudu"
+                         type="checkbox"
+                         class="input-checkbox"
+                         />Vudu</label>
+              <label>
+                  <input
+                         name="prefer"
+                         value="movietheatre"
+                         type="checkbox"
+                         class="input-checkbox"
+                         />Movie Theatre</label>
+              <label>
+                  <input
+                         name="prefer"
+                         value="imdbtv"
+                         type="checkbox"
+                         class="input-checkbox"
+                         />IMDbtv</label>
+                </div>
+                
+                <div class="form-group">
+                  <p>Any comments or other thoughts?</p>
+                  <textarea
+                           id="comments"
+                           class="input-textarea"
+                           name="comments"
+                           placeholder="Enter your comment/thoughts here..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <button type="submit" id="submit"
+                          class="submit-button"> Submit
+                  </button>
+                </div>
+                </form>
+              </div>
+             
+    </body>
+</html>
